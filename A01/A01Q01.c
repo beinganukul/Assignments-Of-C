@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<math.h>
 int main () {
-    int a,b,c,s,A;
+    float a,b,c,s,A;
     printf("Enter three sides of a triangle.");
     scanf("%d%d%d",&a,&b,&c);
     if(a+b>c || b+c>a || a+c>b)

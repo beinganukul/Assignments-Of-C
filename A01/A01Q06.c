@@ -2,9 +2,9 @@
 #include <stdio.h>
 int main()
 {
-    int num1,num2,num3,lar,smo;
+    float num1,num2,num3,lar,smo;
     printf("Enter three numbers\n");
-    scanf("%d %d %d",&num1,&num2,&num3);
+    scanf("%f%f %f",&num1,&num2,&num3);
    
 
     if(num1<num2 && num1<num3){
@@ -28,5 +28,5 @@ int main()
     else{
         lar=num3;
     }
-   printf("Difference between largest and smallest number is:%d",lar-smo);
+   printf("Difference between largest and smallest number is:%f",lar-smo);
 }
