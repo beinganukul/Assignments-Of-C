@@ -1,0 +1,104 @@
+\documentclass[11pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ right=14mm,
+ bottom=20mm,
+ top=18mm,
+}
+
+\lstset{
+    frame=single,
+    breaklines=true,
+    postbreak=\raisebox{0pt}[0pt][0pt]{\ensuremath{\hookrightarrow\space}},
+    basicstyle=\ttfamily,
+    showstringspaces=false,
+}
+ 
+\renewcommand{\chaptername}{Program}
+
+\title{Lab Report \\
+      \textbf{Fundamentals Of C Programming} \\
+      CSC-102}
+\author{\textbf{Anukul Adhikari} \\ 09/22/076}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\chapter*{Information}
+All code used in this report including source code of this report itself is available at:\\ \texttt{https://github.com/beinganukul/Assignments-Of-C/tree/master/A02}
+\section*{Software}
+Following compiler and configuration is verified to work with the snippets in this report:\\
+\texttt{Compiler - gcc 9.2.0 (GCC) 
+\\
+Compiler target - x86\_64-pc-linux-gnu
+}
+
+\tableofcontents
+
+\chapter{While Loop}
+\section{Problem Statement}
+Write a program to reverse a number using while loop.
+\section{Program}
+\lstinputlisting[language=c]{A02Q01.c}
+
+
+\chapter{Looping The Sentence For n Numbers Of Times}
+\section{Problem Statement}
+Write a pogram to read an integer number n from keyboard and display the message Get Well Soon n times.
+
+\section{Program}
+\lstinputlisting[language=c]{A02Q02.c}
+
+
+\chapter{Factorial}
+\section{Problem Statement}
+Write a program to compute the following using factorial.
+\begin{enumerate}
+  \item factorial of an integer $n$.
+\end{enumerate}
+\section{Factorial's Algorithm}
+
+The factorial of a positive integer $n$ can be obtained recursively using the following algorithm.
+\begin{itemize}
+\item If $n=0$, return 1.
+\item Multiply $n$ by $(n-1)!$ and return the result. 
+\end{itemize}
+\section{Factorial}
+        \lstinputlisting[language=c]{A02Q03.c}
+  
+\chapter{Sum Of Natural Numbers}
+\section{Problem Statement}
+Write a program that asks an integer number n and calculate sum of all natural numbers from 1 to n.
+
+\section{Program}
+\lstinputlisting[language=c]{A02Q04.c}
+
+
+\chapter{Sum of Series using Loop}
+\section{Problem Statement}
+Compute $1^2+2^2+3^3+...+n^2$ using for loop taking n as input from user.
+
+
+\section{Program}
+\lstinputlisting[language=c]{A02Q04.c}
+  
+\chapter{Prime Numbers}
+\section{Problem Statement}
+Write an program to find the prime numbers from given input.
+\section{Algorithm}
+A natural number is called a prime number (or a prime) if it has exactly two positive divisors, 1 and the number itself. The prime numbers can be computed using following algorithm:
+\begin{itemize}
+\item Inside each iteration, divide the number by every number less than itself except 1.
+\item If remainder $\neq$ 0, the number prime. Otherwise \texttt{break} from the loop.
+\end{itemize}
+\section{Program}
+\lstinputlisting[language=c]{A02Q04.c}
+
+\end{document}

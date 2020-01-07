@@ -5,6 +5,6 @@ int main() {
     scanf("%d",&a);
     for(i=0;i<=a;i++)
     {
-        printf("Get Well Soon. Im DAD and That was a meme. \n");
+        printf("Get Well Soon\n");
     }
 }
