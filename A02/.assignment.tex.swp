@@ -87,7 +87,7 @@ Compute $1^2+2^2+3^3+...+n^2$ using for loop taking n as input from user.
 
 
 \section{Program}
-\lstinputlisting[language=c]{A02Q04.c}
+\lstinputlisting[language=c]{A02Q05.c}
   
 \chapter{Prime Numbers}
 \section{Problem Statement}
@@ -99,6 +99,6 @@ A natural number is called a prime number (or a prime) if it has exactly two pos
 \item If remainder $\neq$ 0, the number prime. Otherwise \texttt{break} from the loop.
 \end{itemize}
 \section{Program}
-\lstinputlisting[language=c]{A02Q04.c}
+\lstinputlisting[language=c]{A02Q06.c}
 
 \end{document}
